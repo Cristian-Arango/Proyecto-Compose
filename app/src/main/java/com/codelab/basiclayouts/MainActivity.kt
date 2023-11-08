@@ -27,16 +27,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.material3.TextField
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
-import androidx.compose.material3.TextField
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.ui.res.stringResource
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.foundation.layout.fillMaxHeight
-
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
@@ -50,7 +45,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.NavigationBar
@@ -72,10 +66,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-// Step: Search bar - Modifiers
-
-
 
 @Composable
 fun SearchBar(
@@ -103,12 +93,6 @@ fun SearchBar(
     )
 }
 
-
-
-
-
-
-
 @Composable
 fun AlignYourBodyElement(
     @DrawableRes drawable: Int,
@@ -134,23 +118,6 @@ fun AlignYourBodyElement(
         )
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Step: Favorite collection card - Material Surface
-
 
 @Composable
 fun FavoriteCollectionCard(
@@ -182,21 +149,6 @@ fun FavoriteCollectionCard(
     }
 }
 
-//..
-
-
-
-
-
-
-
-
-
-// Step: Align your body row - Arrangements
-
-
-
-
 @Composable
 fun AlignYourBodyRow(
     modifier: Modifier = Modifier
@@ -211,13 +163,6 @@ fun AlignYourBodyRow(
         }
     }
 }
-
-
-
-
-
-// Step: Favorite collections grid - LazyGrid
-
 
 @Composable
 fun FavoriteCollectionsGrid(
@@ -236,13 +181,6 @@ fun FavoriteCollectionsGrid(
     }
 }
 
-
-
-
-
-
-
-// Step: Home section - Slot APIs
 @Composable
 fun HomeSection(
     @StringRes title: Int,
@@ -261,12 +199,6 @@ fun HomeSection(
     }
 }
 
-
-
-
-// Step: Home screen - Scrolling
-
-
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
     Column(
@@ -284,12 +216,6 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         Spacer(Modifier.height(16.dp))
     }
 }
-
-
-
-
-// Step: Bottom navigation - Material
-
 
 @Composable
 private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
@@ -326,13 +252,6 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
     }
 }
 
-
-
-
-
-
-// Step: MySoothe App - Scaffold
-
 @Composable
 fun MySootheAppPortrait() {
     MySootheTheme {
@@ -343,10 +262,6 @@ fun MySootheAppPortrait() {
         }
     }
 }
-
-// Step: Bottom navigation - Material
-
-
 
 @Composable
 private fun SootheNavigationRail(modifier: Modifier = Modifier) {
@@ -390,13 +305,6 @@ private fun SootheNavigationRail(modifier: Modifier = Modifier) {
     }
 }
 
-
-
-
-
-
-
-// Step: Landscape Mode
 @Composable
 fun MySootheAppLandscape() {
     MySootheTheme {
@@ -408,8 +316,6 @@ fun MySootheAppLandscape() {
         }
     }
 }
-
-// Step: MySoothe App
 
 @Composable
 fun MySootheApp(windowSize: WindowSizeClass) {
